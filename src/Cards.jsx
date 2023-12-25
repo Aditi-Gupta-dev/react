@@ -1,4 +1,5 @@
 import React from "react";
+import Images from './Images';
 
 function Card(props){
     console.log(props);
@@ -8,7 +9,7 @@ function Card(props){
      
         <div className="cards">
         <div className="card">
-          <img src={props.imgsrc} alt="pic1" className="card-img"/>
+        <Images imgsrc={props.imgsrc}/>
           <div className="info">
             <span className="category">{props.title}</span>
             <h3 className="title">{props.sname}</h3>
